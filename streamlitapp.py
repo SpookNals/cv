@@ -40,16 +40,13 @@ with edu_tab:
     education()
 
 with dip_tab:
-    pdf_files = {
-    "Senior general secondary education diploma": "dip_cert/Hoger algemeen voortgezet onderwijs - EN.pdf"
-    }
-    dip_or_cert(pdf_files=pdf_files, title="Diplomas")
+    df = pd.read_csv("data/certificates_and_diplomas.csv")
+    df_cert = df[df["type"] == "diploma"]
+
+    dip_or_cert(df=df_cert, title="Diplomas")
         
 with cert_tab:
-    pdf_files = {
-        "Creative Business Propedeutic": "dip_cert/HBO Bachelor Creative Business Propedeuse bachelor - EN.pdf",
-        "ICT: Cyber Security Propedeutic": "dip_cert/HBO Bachelor HBO-ICT Propedeuse bachelor (Information & Communication Technology) - EN.pdf",
-        "Dutch 3F Certificate": "dip_cert/Certificaat_3f_649308 (Taalkennis certificaat).pdf",
-        "School der Poëzie Certificate": "dip_cert/Schoolofpoezie.pdf",
-    }
-    dip_or_cert(pdf_files=pdf_files, title="Certificates")
+    df = pd.read_csv("data/certificates_and_diplomas.csv")
+    df_cert = df[df["type"] == "certificate"]
+
+    dip_or_cert(df=df_cert, title="Certificates")

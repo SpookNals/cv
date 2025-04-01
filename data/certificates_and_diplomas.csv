@@ -1,7 +1,6 @@
-year,type,value
-2011,diploma,Pica Typing skills
-2013,certificate,School der Poezië (Category Images)
-2017,diploma,HAVO - Nature & Health + computer science
-2021,certificate,Language knowledge Dutch 3F level
-2021,diploma,HBO Create Business propaedeutic diploma
-2023,diploma,HBO ICT:Cyber Security propaedeutic diploma
+year,type,value,filepath
+2013,certificate,School der Poezië (Category Images),dip_cert/Schoolofpoezie.pdf
+2017,diploma,havo - Nature & Health + computer science,dip_cert/Hoger algemeen voortgezet onderwijs - EN.pdf
+2021,certificate,Language knowledge Dutch 3F level,dip_cert/Certificaat_3f_649308 (Taalkennis certificaat).pdf
+2021,certificate,HBO Create Business propaedeutic,dip_cert/HBO Bachelor Creative Business Propedeuse bachelor - EN.pdf
+2023,certificate,HBO ICT: Cyber Security propaedeutic,dip_cert/HBO Bachelor HBO-ICT Propedeuse bachelor (Information & Communication Technology) - EN.pdf
